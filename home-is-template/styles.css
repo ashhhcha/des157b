@@ -1,0 +1,186 @@
+/* CSS Resets */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+/* Page styling */
+body {
+    background-color: rgb(235, 235, 235);
+    color: #333;
+    font-family: "DM Sans", sans-serif;
+    transition: all 2s;
+}
+
+body.switch {
+    background-color: rgb(248, 248, 248);
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 0 auto 2em auto;
+    color: #333;
+    transition: all 1s;
+
+}
+
+header.switch{
+    color:rgb(221, 40, 40);
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    color: #333;
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+    background: url(images/adamstar.png) no-repeat center;
+}
+
+#banner.switch {
+    color: rgb(235, 235, 235);
+    /* transition: all 2s; */
+    background: url(images/star.png) no-repeat center;
+    background-size: auto 250px;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+
+main section {
+    flex: 1;
+    margin: 0 .25em;
+    padding: 1em;
+    transition: all 1s;
+}
+
+a {
+    text-decoration: none;
+    transition: all 1s;
+}
+
+nav ol, nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: #333;
+}
+
+section a:hover {
+    background-color: #333;
+    color: #f3f3f3;
+}
+
+section.switch a {
+    color: #333;
+}
+
+section.switch a:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 12px;
+    background-color: rgb(235, 235, 235);
+    border-color: #333;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: rgb(235, 235, 235)
+}
+
+button.switch {
+    background-color: rgb(0, 132, 255);
+    color: #f3f3f3;
+    border: transparent;
+}
+
+button.switch:hover {
+    background-color: rgb(0, 114, 245);
+}
+
+main h2{
+    font-size: 42pt;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+main h3{
+    letter-spacing: 1px;
+}
+
+#projects.switch, #projects.switch a{
+    color: rgb(221, 40, 40);
+}
+
+#projects.switch a:hover{
+    background-color: rgb(221, 40, 40);
+    color:#f3f3f3;
+}
+
+#research.switch, #research.switch a{
+    color: rgb(0, 132, 255);
+}
+
+#research.switch a:hover {
+    background-color: rgb(0, 132, 255);
+    color: #f3f3f3;
+}
+
+#development.switch, #development.switch a{
+    color:rgb(241, 193, 0);
+}
+
+#development.switch a:hover {
+    background-color:rgb(241, 193, 0);
+    color: #f3f3f3;
+}
+
+#capstone.switch, #capstone.switch a{
+    color:rgb(140, 215, 19);
+}
+
+#capstone.switch a:hover {
+    background-color:rgb(140, 215, 19);
+    color: #f3f3f3;
+}
+
