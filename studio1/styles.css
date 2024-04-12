@@ -1,0 +1,82 @@
+#theVideo{
+    position: fixed;
+    left:0;
+    top:0;
+    min-width:100%;
+    min-height:100%;
+}
+
+body{
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 300;
+    cursor: url(fish-solid.svg), auto;
+}
+
+.fas{
+    position:absolute;
+    bottom: 50px;
+    right:30px;
+    color:white;
+    font-size: 50px;
+}
+
+#goUp:hover #goDown:hover{
+    cursor: url(fish-solid-select.svg), auto;
+}
+
+#goUp p, #goDown p{
+    color:white;
+    position:absolute;
+    bottom:10px;
+    right:20px;
+    z-index: 3;
+    text-align: center;
+}
+
+.fa-water{
+    right:35px;
+}
+
+
+#poem{
+    z-index: 1;
+    font-size:36px;
+    width:50%;
+    color:white;
+}
+
+#line1{
+    position:absolute;
+    top:5%;
+    left:5%;
+    transition: 1s;
+}
+
+#line2{
+    position:absolute;
+    top:11%;
+    left:13%;
+    transition: 1s;
+}
+
+#line3{
+    position:absolute;
+    top:11%;
+    left:13%;
+    transition: 1s;
+}
+
+#line4{
+    position:absolute;
+    top:11%;
+    left:13%;
+    transition: 1s;
+}
+
+.hidden{ 
+    opacity:0;
+}
+
+.showing{
+    opacity:1;
+}
