@@ -1,0 +1,30 @@
+{
+    "point1" : {
+        "day" : "Sunday",
+        "meows" : 0
+    },
+    "point2" : {
+        "day" : "Monday",
+        "meows" : 20
+    },
+    "point3" : {
+        "day" : "Tuesday",
+        "meows" : 9
+    },
+    "point4" : {
+        "day" : "Wednesday",
+        "meows" : 9
+    },
+    "point5" : {
+        "day" : "Thursday",
+        "meows" : 3
+    },
+    "point6" : {
+        "day" : "Friday",
+        "meows" : 2
+    },
+    "point7" : {
+        "day" : "Saturday",
+        "meows" : 2
+    }
+}

@@ -1,0 +1,31 @@
+body{
+    width:80%;
+    text-align: center;
+    margin:auto;
+    margin-top: 15%;
+    font-family: "Short Stack", cursive;
+}
+
+#cat1{
+    width:300px;
+    height:auto;
+    position: absolute;
+    bottom:0;
+    right:0;
+}
+
+#cat2{
+    width:300px;
+    height:auto;
+    position: absolute;
+    top:0;
+    right:50%;
+    transform: rotate(180deg);
+}
+#cat3{
+    width:300px;
+    height:auto;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
