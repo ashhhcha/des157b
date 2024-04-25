@@ -4,6 +4,8 @@ body{
     margin:auto;
     margin-top: 15%;
     font-family: "Short Stack", cursive;
+    background-color: rgb(255, 249, 236);
+    color:rgb(125, 97, 63);
 }
 
 #cat1{
