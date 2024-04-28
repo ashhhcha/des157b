@@ -32,7 +32,7 @@ document.querySelector('#picker').addEventListener('change', function(){
 
 function updateInterface(value, jsonData){
     let html = '<p>';
-    html += `On ${jsonData[value].day}, I meowed <b>${jsonData[value].meows}</b> times.`;
+    html += `On ${jsonData[value].day}, I meowed <br><b>${jsonData[value].meows}</b> times.`;
     html += '</p>';
     document.querySelector('#result').innerHTML = html;
 }
