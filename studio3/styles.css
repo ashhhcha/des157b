@@ -1,0 +1,28 @@
+body{
+    background-image: url(images/back.png) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+.draggable{
+    width: 25%;
+    min-height: 6.5em;
+    touch-action: none;
+    user-select: none;
+    transform: translate(0px, 0px);
+}
+
+.draggable img{
+    width:80%;
+}
+
+#items{
+    display: flex;
+    margin-top:10%;
+    justify-content: center;
+}
+
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
