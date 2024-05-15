@@ -6,6 +6,9 @@
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
     
     <link href="styles.css" rel="stylesheet">
 
@@ -16,16 +19,36 @@
 <body>
     <h1>My spice cabinent before I move out</h1>
     <div id="items">
-        <div id="drag-1" class="draggable" >
+        <div class="draggable liquid" >
             <img src="images/image0.png" alt="black vinegar">
+            <i class="fa-solid fa-info" id="vinegar"></i>
         </div>
-        <div id="drag-2" class="draggable" >
+        <div class="draggable dry" >
+            <img src="images/five.png" alt="five spice">
+            <i class="fa-solid fa-info" id="five"></i>
+        </div>
+        <div class="draggable dry" >
+            <img src="images/white.png" alt="white pepper">
+            <i class="fa-solid fa-info" id="pepper"></i>
+        </div>        
+        <div class="draggable liquid" >
             <img src="images/image1.png" alt="rice wine">
+            <i class="fa-solid fa-info" id="rice"></i>
         </div>
-        <div id="drag-3" class="draggable" >
+        <div class="draggable liquid" >
             <img src="images/image2.png" alt="soy sauce">
+            <i class="fa-solid fa-info" id="soy"></i>
+        </div>
+        <div class="draggable dry" >
+            <img src="images/star.png" alt="star anise">
+            <i class="fa-solid fa-info" id="star"></i>
         </div>
     </div>
+
+    <footer>
+        <p><a href="https://interactjs.io/">InteractJS</a></p>
+        <p><a href="https://sweetalert2.github.io/">Popup</a></p>
+    </footer>
 
 </body>
 </html>
