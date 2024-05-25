@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Version 1</title>
+
+    <!-- Normalize CSS for browser compatability -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Add link to any google fonts used here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Linear+B&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+    <!--Typewriter (https://www.typeitjs.com/)-->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+
+    <!-- My Styles -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- Meta tag for mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+    <section id="intro">
+        <div data-aos="fade-up" class="introTxt">
+            <h1 id="multipleStrings"></h1>
+        </div>
+
+        <p>scroll down</p>
+
+        <div data-aos="fade-up" class="plotDescrip">
+            <p>Population on Earth was decimated by a process of elimination by the drastic climate change. 95% of the Earth is water, and there's little land left to traverse on.</p>
+        </div>
+
+        <div data-aos="fade-up" class="plotDescrip">
+            <p>Being in one of the few cities left, you must travel a harsh terrain to scavange for whatever food is left. There's no much considering most food you've eaten in your childhood has died off, and lab grown food is still facing press back from legislation that hopes to bring back the meat industry somday.</p>
+        </div>
+        
+        <div data-aos="fade-up" class="plotDescripLast" id="last">
+            <p>Get ready to gear up and head out to find food.</p>            
+            <button class="start">head to my wardrobe</button>
+        </div>
+    </section>
+
+    <section id="wardrobe">
+        <article class="chooseState">
+
+            <div data-aos="fade-up">
+                <h2>The leftover pollution released from  Saudi Aramco, Gazprom, Exxon, and Chevron make the outside air lethal to inhale.</h2>
+            </div>
+            
+            <div data-aos="fade-up">
+                <h2>The remaining people on this Earth has developed asthma and inflammed lungs from exposure to the horrible air</h2>
+            </div>
+
+            <div data-aos="fade-up">
+                <h2>It's worsened with the fact there are no more trees left, making hiding from the scorching sun difficult.</h2>
+            </div>
+
+            <div data-aos="fade-up">
+                <h3>Pick a <u>mask</u> to protect your lungs from further deterioration and a <u>hat</u> to protect your skin from burning in the sun.</h3>
+            </div>
+            <div data-aos="fade-up" class="choose">
+                <h3>Masks</h3>
+                <div class="options masks">
+                    <img src="images/mask1.PNG"  id="mask1" alt="mask1">
+                    <img src="images/mask2.PNG" id="mask2" alt="mask2">
+                    <img src="images/mask3.PNG" id="mask3" alt="mask3">
+                </div>
+                <h3>Hats</h3>
+                <div class="options hats">
+                    <img src="images/placeholder.png"  id="hat1">
+                    <img src="images/placeholder.png" id="hat2">
+                    <img src="images/placeholder.png" id="hat3">
+                </div>
+                <div class="container">
+                    <button class="next">these look good</button>
+                </div>
+            </div>  
+        </article>
+    </section>
+    
+    <section id="tops">
+        <article class="chooseState">
+
+            <div data-aos="fade-up">
+                <h2>With the mix of heat and sun, heat stroke is common. Thus, you must be strategical with the materials you have left to wear.</h2>
+            </div>
+
+            <div data-aos="fade-up">
+                <h2>...Something that will cover as much of your skin, but still circulate air to prevent heat from collecting.</h2>
+            </div>
+
+            <div data-aos="fade-up">
+                <h3>Pick a <u>top</u> and <u>bottom</u> to protect your body from being burnt in the sun.</h3>
+            </div>
+            <div data-aos="fade-up" class="choose" >
+                <h3>Tops</h3>
+                <div class="options tops">
+                    <img src="images/placeholder.png"  id="top1">
+                    <img src="images/placeholder.png" id="top2">
+                    <img src="images/placeholder.png" id="top3">
+                </div>
+                <h3>Bottom</h3>
+                <div class="options bottoms">
+                    <img src="images/placeholder.png"  id="bot1">
+                    <img src="images/placeholder.png" id="bot2">
+                    <img src="images/placeholder.png" id="bot3">
+                </div>
+                <div class="container">
+                    <button class="end">head out</button>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="finish">
+        <article class="chooseState">
+            <div class="completed">
+                <img src="#">
+            </div>
+            <div data-aos="fade-up">
+                <h2>With your gear, you're ready to head out.</h2>
+            </div>
+
+            <div data-aos="fade-up" class="exit">
+                <h1>Good luck out there...</h1>
+                <div class="container2">
+                    <button class="end">bye bye!</button>
+                </div>
+            </div>
+
+
+
+        </article>
+        
+    </section>
+    
+
+</body>
+
+</html>
