@@ -1,0 +1,139 @@
+.showing{
+    display:block;
+}
+
+.hidden{
+    display:none;
+}
+
+body{
+    font-family: "Ubuntu Sans Mono", monospace;
+    font-weight: 400;
+    background: #2E2E2E;
+    color:white;
+    scroll-behavior: smooth;
+}
+
+[data-typeit-id="3049651"] .ti-cursor{
+    color:var(--ti-cursor-color, rgb(255, 255, 255))
+}
+
+h1{
+    font-weight:600;
+}
+
+h3{
+    font-size:16pt;
+}
+
+p{
+    font-size:16pt;
+}
+
+/* translation */
+.fontChange{
+    font-weight: 400;
+    font-style: italic;
+    font-size:16pt;
+}
+
+.introTxt{
+    margin:15% 0;
+    padding:20px;
+    border: 1px solid white;
+    margin-left:50px;    
+    margin-bottom:500px;
+}
+
+.plotDescrip{
+    width:40%;
+    margin:15% 20% 30% 20%;
+}
+
+.plotDescripLast{
+    width:40%;
+    margin: 20% 20%;
+}
+
+#last p{
+    margin-bottom:20px;
+}
+
+button{
+    padding:10px 20px;
+    background-color:white;
+    color: #2E2E2E;
+    border:1px solid black;
+    transition:0.5s;
+}
+
+button:hover{
+    background-color:rgb(189, 189, 189);
+}
+
+#wardrobe{
+    margin-bottom: 5%;
+    width:80%;
+    margin:auto;
+}
+
+.chooseState{
+    width:50%;
+    margin:auto;
+    margin-top:10%;
+}
+
+.chooseState div h2{
+    margin:40% 0 60% 0;
+}
+
+.choose{
+    margin-bottom: 2%;
+}
+
+.choose div{
+    margin:5% 0;
+}
+
+.container{
+    width:100%;
+    display:grid;
+    justify-content: center;
+}
+
+.container2{
+    width:100%;
+    display:flex;
+    gap:20px;
+}
+
+.options{
+    display:flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+
+.options img{
+    padding:20px;
+    background-color:rgb(203, 203, 203);
+    transition: 0.3s ease;
+    cursor: pointer;
+    width:125px;
+    height:125px;
+}
+
+.options img.back{
+    background-color:rgb(255, 255, 255);
+}
+
+.options img.active{
+    filter: grayscale(50%);
+}
+
+.exit{
+    margin-bottom:40%;
+}
+
+.completed img{
+    display: flex;
+}
