@@ -4,7 +4,7 @@
 //introduction page animation
     new TypeIt("#multipleStrings", {
         strings: ["Og's Yere 3020,", "<span class='fontChange'>(It's Year 3020,)</span>", " Tcear'snt neb soch obi strav Earth.","<span class='fontChange'>(There's not much left of Earth.)</span>"],
-        speed: 10,
+        speed: 5,
         waitUntilVisible: true,
     }).go();
 
@@ -18,14 +18,33 @@
     const end = document.querySelector(".end");
     const finish = document.querySelector("#finish");
 
-    wardrobe.className = 'showing';
+    const alert = document.querySelector('#alert');
+    const alertBut = document.querySelector('.alertNxt');
+    
+    const instruct = document.querySelector('#instructContainer');
+
+    alert.className = 'showing';
+    wardrobe.className = 'hidden';
     body.className = 'hidden';
     finish.className = 'hidden';
     intro.className = 'hidden';
     finish.className = 'hidden';
     AOS.init();
 
+    instruct.className = 'byebye';
+
+    setTimeout(function(){
+        instruct.className = 'hihi';
+    }, 6000);
+
 //changing pages
+
+    alertBut.addEventListener('click', function(){
+        alert.className = 'hidden';
+        intro.className = 'showing';
+        AOS.init();
+    });
+
     getStarted.addEventListener('click', function(){
         intro.className = 'hidden';
         wardrobe.className = 'showing';
