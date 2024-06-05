@@ -12,3 +12,21 @@ p{
 h1{
     font-size:28pt;
 }
+
+h3{
+    margin-bottom: unset;
+}
+
+#usability p{
+    margin-top:unset;
+}
+
+img{
+    width:80%;
+    display:flex;
+    margin:auto;
+}
+
+article{
+    margin-bottom:100px;
+}

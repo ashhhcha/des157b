@@ -83,7 +83,7 @@
         if (lastSelectedImage === e.target) {
             displayDiv.appendChild(selectedImg); 
         }
-    }   
+    }
 
     setupClickEvent('.masks');
     setupClickEvent('.hats');

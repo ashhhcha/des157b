@@ -161,4 +161,16 @@ button:hover{
 
 .completed img{
     display: flex;
+    width:25%;
+}
+
+.completed{
+    display:grid;
+    margin:auto;
+}
+
+#organize{
+    display:flex;
+    gap:50px;
+    margin-bottom:300px;
 }

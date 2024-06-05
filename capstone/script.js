@@ -57,7 +57,7 @@
 
 
 //choosing articles of clothing
-    let selectedImages = {};
+let selectedImages = [];
     
     function setupClickEvent(selectID) {
         const optionsimg = document.querySelectorAll(`${selectID} img`);
@@ -69,31 +69,39 @@
                 selectedImages[selectID.replace('.', '')] = this;
             });
         });
-   }     
+   }    
+   setupClickEvent('.masks');
+   setupClickEvent('.hats');
+   setupClickEvent('.tops');
+   setupClickEvent('.bottoms');
 
    function handleImg(e) {
-        const displayDiv = document.querySelector('.completed');
-        displayDiv.innerHTML = '';
-        const selectedImg = document.createElement('img');
-        selectedImg.src = e.target.src; 
-        selectedImg.alt = e.target.alt; 
-        
-        const category = e.target.closest(`.${e.target.dataset.category}`);
-        const lastSelectedImage = selectedImages[category.id];
-        if (lastSelectedImage === e.target) {
-            displayDiv.appendChild(selectedImg); 
+    const displayDiv = document.querySelector('.completed');
+    displayDiv.innerHTML = ''; 
+    for (let category in selectedImages) {
+        if (selectedImages.hasOwnProperty(category)) {
+            const lastSelectedImg = selectedImages[category];
+            if (lastSelectedImg) {
+                const selectedImg = document.createElement('img');
+                selectedImg.src = lastSelectedImg.src;
+                selectedImg.alt = lastSelectedImg.alt;
+                displayDiv.appendChild(selectedImg);
+            }
         }
-    }   
-
-    setupClickEvent('.masks');
-    setupClickEvent('.hats');
-    setupClickEvent('.tops');
-    setupClickEvent('.bottoms');
+    }
+}
 
 //call selected images later
     document.body.addEventListener('click', function(e){
         if (e.target.matches('.masks img') || e.target.matches('.hats img') || e.target.matches('.tops img') || e.target.matches('.bottoms img')) {
             handleImg(e);
         }
-    });
+    }); 
+    
+
+
+//begging god please work
+
+
+
 })()
