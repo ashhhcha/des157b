@@ -24,6 +24,9 @@
     <!--Typewriter (https://www.typeitjs.com/)-->
     <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
 
+    <!-- Scroll progress -->
+    <script src="https://cdn.jsdelivr.net/npm/scrollprogress@3.0.2/dist/scrollProgress.min.js" defer></script>
+
     <!-- My Styles -->
     <link href="styles.css" rel="stylesheet">
 
@@ -36,8 +39,11 @@
 </head>
 
 
-<body>
+<body>        
+    <div class="progress-bar"></div>
+
     <section id="intro">
+
         <div data-aos="fade-up" class="introTxt">
             <h1 id="multipleStrings"></h1>
         </div>
@@ -53,7 +59,7 @@
         </div>
 
         <div data-aos="fade-up" class="plotDescrip">
-            <p>Being in one of the few cities left, you must travel a harsh terrain to scavange for whatever food is left. There's no much considering most food you've eaten in your childhood has died off, and lab grown food is still facing press back from legislation that hopes to bring back the meat industry somday.</p>
+            <p>Being in one of the few cities left, you must travel a harsh terrain to scavenge for whatever food is left. There's not much considering most animals, fruit, and vegetables you've eaten in your childhood has died off, and lab grown food is still facing press back from legislation that hopes to bring back the meat industry someday.</p>
         </div>
         
         <div data-aos="fade-up" class="plotDescripLast" id="last">
@@ -63,6 +69,8 @@
     </section>
 
     <section id="wardrobe">
+        
+        
         <article class="chooseState">
 
             <div data-aos="fade-up">
@@ -102,6 +110,8 @@
     </section>
     
     <section id="tops">
+        <div class="progress-bar"></div>
+
         <article class="chooseState">
 
             <div data-aos="fade-up">
@@ -113,7 +123,7 @@
             </div>
 
             <div data-aos="fade-up">
-                <h3>Pick a <u>top</u> and <u>bottom</u> to protect your body from being burnt in the sun.</h3>
+                <h3>Pick a <u>top</u> to protect your body from being burnt in the sun.</h3>
             </div>
             <div data-aos="fade-up" class="choose" >
                 <h3>Tops</h3>
@@ -121,12 +131,6 @@
                     <img src="images/top1.PNG"  id="top1" alt="top1" >
                     <img src="images/top2.PNG" id="top2" alt="top2" >
                     <img src="images/top3.PNG" id="top3" alt="top3" >
-                </div>
-                <h3>Bottom</h3>
-                <div class="options bottoms completed-bot">
-                    <img src="images/placeholder.png" id="bot1" >
-                    <img src="images/placeholder.png" id="bot2" >
-                    <img src="images/placeholder.png" id="bot3" >
                 </div>
                 <div class="container">
                     <button class="end">head out</button>
@@ -136,6 +140,9 @@
     </section>
 
     <section id="finish">
+        <div class="progress-bar"></div>
+
+        <img src="images/wolfgang-hasselmann-pVr6wvUneMk-unsplash.jpg" alt="desert landscape" class="backimg">
         <article class="chooseState">
             <div id="organize">
                 <div data-aos="fade-up">
@@ -148,14 +155,36 @@
             <div data-aos="fade-up" class="exit">
                 <h1>Good luck out there...</h1>
                 <div class="container2">
-                    <button class="end">bye bye!</button>
+                    <button class="byebye">bye bye!</button>
                 </div>
             </div>
         </article>
     </section>
 
     <section id="results">
-        <h2>Despite the clothing you wear, the harsh sun was too unbearable.</h2>
+        <div class="progress-bar"></div>
+
+        <img src="images/wolfgang-hasselmann-pVr6wvUneMk-unsplash.jpg" alt="desert landscape" class="backimg">
+
+        <div data-aos="fade-up" class="plotDescrip">
+            <h2>Despite the clothing you wear, the harsh sun was too unbearable. You feel your skin blister and burn through the clothes.</h2>
+        </div>
+
+        <div data-aos="fade-up" class="plotDescrip">
+            <h2>Within 2 miles of the hot sun, you oddly feel cold. A few more steps and you see black dots in your vision.</h2>
+        </div>
+
+        <div data-aos="fade-up" class="plotDescrip">
+            <h2>Your legs feel heavy and you can barely take another step. You pass out and begin to merge with the sand...</h2>
+        </div>
+
+        <div data-aos="fade-up" class="plotDescrip">
+            <h2>The End</h2>
+            <div class="container2">
+                <button class="restart">restart</button>
+            </div>
+        </div>
+
     </section>
     
 

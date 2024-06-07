@@ -17,6 +17,9 @@
     const body = document.querySelector("#tops");
     const end = document.querySelector(".end");
     const finish = document.querySelector("#finish");
+    const bye = document.querySelector('#results');
+    const byeButton = document.querySelector('.byebye');
+    const restart = document.querySelector('.restart');
     
     const instruct = document.querySelector('#instructContainer');
 
@@ -25,6 +28,7 @@
     finish.className = 'hidden';
     intro.className = 'showing';
     finish.className = 'hidden';
+    bye.className = 'hidden';
     AOS.init();
 
     instruct.className = 'byebye';
@@ -32,6 +36,7 @@
     setTimeout(function(){
         instruct.className = 'hihi';
     }, 6000);
+    initScrollProgress('.progress-bar'); 
 
 //changing pages
     getStarted.addEventListener('click', function(){
@@ -39,6 +44,7 @@
         wardrobe.className = 'showing';
         AOS.init();
         document.documentElement.scrollTop = 0;
+        initScrollProgress('.progress-bar'); 
     });
 
     next.addEventListener('click', function(){
@@ -46,6 +52,7 @@
         body.className = 'showing';
         AOS.init();
         document.documentElement.scrollTop = 0;
+        initScrollProgress('.progress-bar'); 
     });
 
     end.addEventListener('click', function(){
@@ -54,6 +61,31 @@
         AOS.init();
         document.documentElement.scrollTop = 0;
     });
+
+    byeButton.addEventListener('click', function(){
+        bye.className = 'showing';
+        finish.className = 'hidden';
+        AOS.init();
+        document.documentElement.scrollTop = 0;
+    });
+    
+    restart.addEventListener('click', function(){
+        bye.className = 'hidden';
+        intro.className = 'showing';
+        AOS.init();
+        document.documentElement.scrollTop = 0;
+    });
+
+    
+
+    function initScrollProgress(progressBarSelector) {
+        const progressBar = document.querySelector(progressBarSelector);
+        if (progressBar) {
+            const progressObserver = new ScrollProgress((x, y) => {
+                progressBar.style.width = y * 100 + '%';
+            });
+        }
+    }
 
 
 //choosing articles of clothing
