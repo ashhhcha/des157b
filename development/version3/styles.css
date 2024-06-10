@@ -206,23 +206,3 @@ button:hover{
     width:200px;
     height:200px;
 }
-
-footer p a{
-    color:white;
-}
-footer{
-    width:60%;
-    margin:auto;
-}
-
-#sources p a{
-    text-decoration: none;
-    color:white;
-}
-
-#sources{
-    width:80%;
-    text-align: center;
-    padding-top:100px;
-    margin:auto;
-}
